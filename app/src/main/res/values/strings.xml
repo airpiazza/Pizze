@@ -7,4 +7,7 @@
     <string name="sign_in">Sign in</string>
     <string name="username">username</string>
     <string name="sign_up_here"><u>Sign Up Here</u></string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="pizza_logo">pizza logo</string>
 </resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630297864230",
+    "firebase_url": "https://pizze-57648.firebaseio.com",
+    "project_id": "pizze-57648",
+    "storage_bucket": "pizze-57648.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630297864230:android:e3f101e3a57690365a5ee7",
+        "android_client_info": {
+          "package_name": "com.nicholaspiazza.pizze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630297864230-lf5gvtvnudunoc3d23h1os6qokih3ghk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdzRD2NIWt3PVEsURgFqnrMxYaay7auz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630297864230-lf5gvtvnudunoc3d23h1os6qokih3ghk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
