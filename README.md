@@ -1,2 +1,2 @@
 # Pizze
-Social Media Pizza Sharing App
+In the process of building a social media pizza sharing android app
