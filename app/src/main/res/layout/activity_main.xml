@@ -83,6 +83,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/light_red"
         android:text="@string/sign_up"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_box_signing_up" />

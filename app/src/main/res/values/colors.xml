@@ -3,6 +3,9 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="pizza_red">#E12301</color>
-    <color name="light_red">#CA6C65</color>
+    <color name="pizza_red">#ce0000</color>
+    <color name="light_red">#E12301</color>
+    <color name="accent_orange">#dba24a</color>
+    <color name="old_light_red">#CA6C65</color>
+    <color name="white">#FFFFFF</color>
 </resources>

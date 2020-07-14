@@ -9,6 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlin.math.sign
 
 
 class SignUp : AppCompatActivity() {
@@ -19,6 +20,8 @@ class SignUp : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
         auth = FirebaseAuth.getInstance()
         onStart()
+
+        signInLink()
 
         sign_in_button.setOnClickListener {
             var email = sign_in_email.text.toString()
@@ -57,6 +60,14 @@ class SignUp : AppCompatActivity() {
             Log.d(TAG, "updateUI: current user was not logged in")
         }
         Log.d(TAG, "updateUI: update UI function ran")
+    }
+
+    private fun signInLink() {
+        go_to_register.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            Log.d(TAG, "signInLink: user clicked register link")
+        }
     }
 
 }
