@@ -46,6 +46,12 @@ class LoggedIn : AppCompatActivity() {
 //            Log.d(TAG, "onStart: firebase user object ${cUser.uid} created from firebase auth object, now being passed to updateUI function ")
 //        }
         updateUI(cUser)
+        val postButton = post_button_id
+        postButton.setOnClickListener {
+            val intent = Intent(this, Post::class.java)
+            startActivity(intent)
+            Log.d(TAG, "onStart: clicked post button")
+        }
     }
 
     private fun updateUI(cUser: FirebaseUser?) {
