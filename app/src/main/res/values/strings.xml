@@ -26,4 +26,6 @@
     <string name="post">POST</string>
     <string name="log_out">Log Out</string>
     <string name="don_t_have_an_account_register"><u>Don\'t have an account? Register</u></string>
+    <string name="write_caption">write caption</string>
+    <string name="go_back">go back</string>
 </resources>
