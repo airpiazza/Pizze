@@ -14,7 +14,7 @@
     tools:context=".Post">
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/add_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8">
+        app:layout_constraintTop_toBottomOf="@+id/add_image">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -41,11 +41,12 @@
 
     <Button
         android:id="@+id/post_post"
-        android:layout_width="0dp"
+        android:layout_width="334dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@color/light_red"
+        android:background="@drawable/button_shape"
         android:text="@string/post"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -54,12 +55,13 @@
 
     <Button
         android:id="@+id/goback"
-        android:layout_width="0dp"
-        android:background="@color/light_red"
-        android:textColor="@color/white"
+        android:layout_width="334dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
         android:text="@string/go_back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
