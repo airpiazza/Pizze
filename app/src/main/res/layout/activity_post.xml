@@ -18,8 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/other_add_image" />
@@ -34,6 +35,8 @@
         app:layout_constraintTop_toBottomOf="@+id/add_image">
 
         <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/post_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/write_caption" />
