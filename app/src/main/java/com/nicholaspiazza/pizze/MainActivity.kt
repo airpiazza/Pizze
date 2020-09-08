@@ -140,11 +140,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun puttingUserInfoInDatabase(f: String, l: String, u: String){
         databaseReferenceObject = FirebaseDatabase.getInstance().reference
-        val theNewestUser = RegisteredUser(u, f, l)
+        val theNewestUser = RegisteredUser(u, f, l, "$f $l")
         databaseReferenceObject.child("users").child(u).setValue(theNewestUser).addOnSuccessListener {
             Log.d(TAG, "puttingUserInfoInDatabase: user is now in database")
         }
     }
 }
 
-data class RegisteredUser(var theUID: String, var userFirstName: String, var lastName: String)
+data class RegisteredUser(var theUID: String, var userFirstName: String, var lastName: String, var fullName: String)

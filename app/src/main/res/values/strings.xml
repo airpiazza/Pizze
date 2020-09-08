@@ -28,4 +28,6 @@
     <string name="don_t_have_an_account_register"><u>Don\'t have an account? Register</u></string>
     <string name="write_caption">write caption</string>
     <string name="go_back">GO BACK</string>
+    <string name="friends">friends</string>
+    <string name="search_users">search users</string>
 </resources>

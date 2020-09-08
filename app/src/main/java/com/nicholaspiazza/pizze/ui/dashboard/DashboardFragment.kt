@@ -22,6 +22,7 @@ import com.nicholaspiazza.pizze.OurPosts
 import com.nicholaspiazza.pizze.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_dashboard.*
+import kotlinx.android.synthetic.main.posts_recycler.*
 
 
 class DashboardFragment : Fragment() {
@@ -61,10 +62,21 @@ class DashboardFragment : Fragment() {
             }
 
             override fun onBindViewHolder(holder: ViewHolder, position: Int, model: OurPosts) {
-                holder.setUserName(model.theirFirstName, model.theirLastName)
-                holder.postTime.setText("Posted " + model.timeAndDate)
-                holder.caption.setText(model.theCaption)
-                Picasso.get().load(model.thePhotoUrl).into(holder.postImage)
+//                if(model.theCaption.equals("un'altra")) {
+                    holder.setUserName(model.theirFirstName, model.theirLastName)
+                    holder.postTime.text = "Posted " + model.timeAndDate
+                    holder.caption.text = model.theCaption
+                    Picasso.get().load(model.thePhotoUrl).into(holder.postImage)
+//                holder.postImage.visibility = View.GONE
+//                }
+//                else{
+//                    holder.userName.visibility = View.GONE
+//                    holder.postImage.visibility = View.GONE
+//                    holder.postTime.visibility = View.GONE
+//                    holder.caption.visibility = View.GONE
+//                    holder.postImage.visibility = View.GONE
+//                }
+
             }
         }
 //        recyclerView.adapter = viewAdapter
@@ -90,7 +102,7 @@ class DashboardFragment : Fragment() {
         var postImage: ImageView = itemView.findViewById(R.id.postImage)
 
         fun setUserName(f: String, l: String){
-            userName.setText("$f $l")
+            userName.text = "$f $l"
 
         }
     }
@@ -98,24 +110,8 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("DashboardFragment", "onViewCreated: $recycler_view")
-//        val dbRefQuery: Query = FirebaseDatabase.getInstance().getReference("/posts").limitToLast(100)
-//        val theOptions: FirebaseRecyclerOptions<OurPosts> = FirebaseRecyclerOptions.Builder<OurPosts>().setQuery(dbRefQuery, OurPosts::class.java).build()
-//        val viewAdapter = object : FirebaseRecyclerAdapter<OurPosts, ViewHolder>(theOptions){
-//            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-//                val theView = LayoutInflater.from(parent.context).inflate(R.layout.posts_recycler, parent, false)
-//                return ViewHolder(theView)
-//            }
-//
-//            override fun onBindViewHolder(holder: ViewHolder, position: Int, model: OurPosts) {
-//                holder.setUserName(model.firstName, model.lastName)
-//                holder.postTime.setText(model.timeAndDate)
-//                holder.caption.setText(model.caption)
-//            }
-//        }
-//        theViewAdapter = viewAdapter
         recycler_view.adapter = theViewAdapter
         Log.d(TAG, "onViewCreated: ${recycler_view.top}")
-
 
     }
 

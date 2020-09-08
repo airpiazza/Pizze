@@ -8,4 +8,5 @@
     <color name="accent_orange">#dba24a</color>
     <color name="old_light_red">#CA6C65</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
