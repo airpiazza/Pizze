@@ -127,7 +127,7 @@ class Post : AppCompatActivity() {
         val date = Date()
         val currentDate: String = dateFormat.format(date)
         val theNewestPost = PostInfo(caption, lastName, firstName, aPostUrl, aUserUid, currentDate)
-        databaseReferenceObject.child("posts").child("$fN $lN $currentDate").setValue(theNewestPost).addOnSuccessListener {
+        databaseReferenceObject.child("posts").child("$currentDate $fN $lN").setValue(theNewestPost).addOnSuccessListener {
             Log.d(TAG, "post is now in database")
 //            databaseReferenceObject.child("users").child(theAuth.currentUser?.uid.toString()).child("posts")
 //                .child("$fN $lN $currentDate").setValue(theNewestPost)
