@@ -7,4 +7,4 @@ This is an Android pizza photo sharing app where you can upload a picture of a p
   * Using XML to make the user interface
   * E-mail and password verification using Google Firebase Authentication
   * Displaying images and text using RecyclerView
-  * Kotin for Android App Development
+  * Kotlin for Android App Development
